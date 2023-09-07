@@ -5,7 +5,7 @@ import { colors } from '../global/colors'
 const CategoryItem = ({item}) => {
   return (
     <View style={styles.categories}>
-      <Text style={styles.categoriesText}>{item}</Text>
+      <Text  style={styles.categoriesText}>{item}</Text>
     </View>
   )
 }
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Cochin',
         alignItems: 'center',
         justifyContent: "center",
-        
+        textTransform:'capitalize',
         width: "80%",
         textAlign: 'center',
         padding: 4,

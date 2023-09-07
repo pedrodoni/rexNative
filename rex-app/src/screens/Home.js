@@ -3,11 +3,14 @@ import React from 'react'
 import Header from '../components/Header'
 import CategoriesList from '../components/CategoriesList'
 import { colors } from '../global/colors'
+import Search from '../components/Search'
 
 const Home = () => {
   return (
     <View style={styles.container}>
+      
       <Header/>
+      
       <CategoriesList/>
     </View>
   )

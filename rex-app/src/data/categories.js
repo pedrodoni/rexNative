@@ -1,7 +1,7 @@
 export const categories =[
-    "Jugueteria",
-    "Perfumeria",
-    "Libreria",
-    "Bazar"
+    "jugueteria",
+    "perfumeria",
+    "libreria",
+    "bazar"
   ]
 
