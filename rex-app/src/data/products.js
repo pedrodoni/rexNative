@@ -73,9 +73,9 @@ export const products=[
         "stock": 1028,
         "brand": "Saca Puntas",
         "category": "libreria",
-        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sacapuntametalico.gif",
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_882251-MLA43208790226_082020-O.webp",
         "images": [
-          "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sacapuntametalico.gif",
+          "https://http2.mlstatic.com/D_NQ_NP_882251-MLA43208790226_082020-O.webp",
           "https://http2.mlstatic.com/D_NQ_NP_882251-MLA43208790226_082020-O.webp",
         ]
       },

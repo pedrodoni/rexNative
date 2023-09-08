@@ -1,11 +1,17 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Pressable } from 'react-native'
 import React from 'react'
 import { colors } from '../global/colors'
 
 const CategoryItem = ({item}) => {
+
+
+
+
   return (
     <View style={styles.categories}>
+      <Pressable >
       <Text  style={styles.categoriesText}>{item}</Text>
+      </Pressable>
     </View>
   )
 }

@@ -3,11 +3,11 @@ import React,{useState} from 'react'
 import { colors } from '../global/colors'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-const Search = () => {
+const Search = ({text,setText}) => {
 
-const [text, setText] = useState("")
 
-console.log(text)
+
+
   return (
     <View style={styles.container}>
       <TextInput 
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         flexDirection:"row",
         alignItems:"center",
-        marginTop:-30,
+        marginTop:30,
         marginBottom:30,
         width: "100%"
         
