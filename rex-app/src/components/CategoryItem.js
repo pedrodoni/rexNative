@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         fontSize: 50,
         margin: 15,
         borderColor: colors.white,
-        fontFamily: 'Cochin',
+        fontFamily: 'Merriweather',
         alignItems: 'center',
         justifyContent: "center",
         textTransform:'capitalize',

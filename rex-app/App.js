@@ -7,9 +7,18 @@ import Search from './src/components/Search';
 import Products from './src/screens/Products';
 import { ScrollView } from 'react-native';
 import Header from './src/components/Header';
+import { useFonts } from 'expo-font';
+
 
 export default function App() {
-  const [screens, setScreens] = useState("Home")
+  const [fontsLoaded] = useFonts({
+    Merriweather: require("./assets/Merriweather-Regular.ttf")
+
+
+  })
+if(!fontsLoaded){
+  return;
+}
       
   return (
     
@@ -20,10 +29,7 @@ export default function App() {
     <Home></Home>
     <Products category="jugueteria"/>
     </ScrollView>  
-
-   
-      
-    </SafeAreaView>
+     </SafeAreaView>
   );
 }
 
