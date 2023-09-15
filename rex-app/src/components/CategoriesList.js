@@ -7,6 +7,7 @@ const CategoriesList = () => {
   return (
     <View style={styles.container}>
      <FlatList
+     
      data={categories}
      keyExtractor={(key)=>key}
      renderItem={({item})=>
@@ -23,10 +24,11 @@ const CategoriesList = () => {
 const styles = StyleSheet.create({
     container: {
     
-      width: "100%"
-    
+      width: "100%",
+      marginBottom:150
       
     },
+  
   });
 
 

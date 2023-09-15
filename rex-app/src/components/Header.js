@@ -1,8 +1,11 @@
 import { View, Text,StyleSheet,Image } from 'react-native'
 import React from 'react'
+import { SafeAreaView } from 'react-native'
 
 const Header = () => {
   return (
+    
+    <SafeAreaView>
     <View style={styles.container}>
         
       <Image 
@@ -11,6 +14,7 @@ const Header = () => {
       
       />
     </View>
+    </SafeAreaView>
   )
 }
 

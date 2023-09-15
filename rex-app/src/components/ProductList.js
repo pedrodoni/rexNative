@@ -6,7 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 const ProductList = ({item}) => {
   return (
     <View style={styles.container}>
-      <View style={styles.item}>
+      
       <Image
       resizeMode='cover'
       style={styles.image}
@@ -16,28 +16,30 @@ const ProductList = ({item}) => {
       <Text style={styles.title}>{item.title}</Text>
       <Text style={styles.price}>${item.price}</Text>
       <Ionicons name="add-circle-outline" size={30} color="black" />
-      </View>
+     
     </View>
   )
 }
 const styles = StyleSheet.create({
 container:{
-   flexDirection: 'row',
-     borderWidth: 3,
+  flexDirection: 'row',
+  borderWidth: 3,
   borderRadius: 25,
   borderColor:colors.orange,
   backgroundColor: colors.lightGrey,
-  width: "45%",
-  marginHorizontal: 15,
+
+  marginHorizontal: 5,
   marginVertical: 5,
-  
-},
-item:{
- 
+  alignItems: 'center',
   margin: 5,
   padding: 5,
   width: "100%",
   alignItems: 'center'
+  
+},
+item:{
+ 
+  
 
 
 }, 

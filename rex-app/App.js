@@ -8,6 +8,8 @@ import Products from './src/screens/Products';
 import { ScrollView } from 'react-native';
 import Header from './src/components/Header';
 import { useFonts } from 'expo-font';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigation from './src/RootNavigation/RootNavigation';
 
 
 export default function App() {
@@ -21,15 +23,13 @@ if(!fontsLoaded){
 }
       
   return (
+    <NavigationContainer>
+        <Header/>
+        <RootNavigation/>
     
-    <SafeAreaView >
-    <ScrollView>
-    <Header></Header>
+
+    </NavigationContainer>
     
-    <Home></Home>
-    <Products category="jugueteria"/>
-    </ScrollView>  
-     </SafeAreaView>
   );
 }
 

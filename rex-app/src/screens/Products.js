@@ -8,6 +8,8 @@ import { data } from '../components/CategoryItem'
 
 const Products = ({category}) => {
 
+
+  category= "jugueteria"
  const [categoryProd, setCategoryProd] = useState([])
  const [text, setText] = useState(null)
  
