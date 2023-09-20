@@ -6,17 +6,18 @@ import { products } from '../data/products'
 import ProductList from '../components/ProductList'
 import { data } from '../components/CategoryItem'
 
-const Products = ({category}) => {
+const Products = ({route, navigation}) => {
 
 
-  category= "jugueteria"
+  
  const [categoryProd, setCategoryProd] = useState([])
  const [text, setText] = useState(null)
+ const { item } = route.params;
  
 
 
 useEffect(() => {
- const categoryProducts = products.filter((el)=> el.category===category)
+ const categoryProducts = products.filter((el)=> el.category===item)
  setCategoryProd(categoryProducts)
  if(text){
   const titleProd = products.filter(
@@ -24,30 +25,36 @@ useEffect(() => {
   );
   setCategoryProd(titleProd);
  }
- }, [text, category]);
+ }, [text, item]);
  
 
 
   return (
-    <View    >
+    <View style={{alignItems:'center'}}   >
+      
+      <Header navigation={navigation}/>
       
     
       <Search text={text} setText={setText}/>
    
-   
-     <FlatList 
+    
+      <FlatList 
       
-      data={categoryProd}
-      keyExtractor={products.id}
-      renderItem={({item})=>
-        <ProductList    item={item}/>
+      style={styles.container} 
+      
+      numColumns={2}
+        data={categoryProd}
+        keyExtractor={products.id}
+        renderItem={({item})=>
+          <ProductList   navigation={navigation} item={item}/>
+          
+          }
         
-        }
-      
-      
-      
-      
+        
+        
+        
       />
+    
     
       
     
@@ -61,9 +68,10 @@ useEffect(() => {
 }
 const styles = StyleSheet.create({
   container:{
-     
-     flexDirection: 'row',
-      flexWrap: 'wrap'
+ flexDirection: "row",
+
+ 
+  
   },
   item:{
   

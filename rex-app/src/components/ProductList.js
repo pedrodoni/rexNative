@@ -1,12 +1,12 @@
-import { View, Text,StyleSheet, Image } from 'react-native'
+import { View, Text,StyleSheet, Image, Pressable } from 'react-native'
 import React from 'react'
 import { colors } from '../global/colors'
 import { Ionicons } from '@expo/vector-icons';
 
-const ProductList = ({item}) => {
+const ProductList = ({item,navigation}) => {
   return (
     <View style={styles.container}>
-      
+      <Pressable onPress={()=>navigation.navigate("Detalle",{item})}>
       <Image
       resizeMode='cover'
       style={styles.image}
@@ -16,13 +16,13 @@ const ProductList = ({item}) => {
       <Text style={styles.title}>{item.title}</Text>
       <Text style={styles.price}>${item.price}</Text>
       <Ionicons name="add-circle-outline" size={30} color="black" />
-     
+      </Pressable>
     </View>
   )
 }
 const styles = StyleSheet.create({
 container:{
-  flexDirection: 'row',
+  flexDirection:"column",
   borderWidth: 3,
   borderRadius: 25,
   borderColor:colors.orange,
@@ -33,16 +33,11 @@ container:{
   alignItems: 'center',
   margin: 5,
   padding: 5,
-  width: "100%",
+  width: 180,
   alignItems: 'center'
   
 },
-item:{
  
-  
-
-
-}, 
 title:{
   fontSize: 17,
  fontWeight: "300"

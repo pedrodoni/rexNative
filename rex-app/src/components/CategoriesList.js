@@ -3,7 +3,11 @@ import React from 'react'
 import { categories } from '../data/categories'
 import { colors } from '../global/colors'
 import CategoryItem from './CategoryItem'
-const CategoriesList = () => {
+import { useNavigation } from '@react-navigation/native'
+
+
+
+const CategoriesList = ({navigation}) => {
   return (
     <View style={styles.container}>
      <FlatList
@@ -13,7 +17,7 @@ const CategoriesList = () => {
      renderItem={({item})=>
      
         
-        <CategoryItem item={item}/>
+        <CategoryItem navigation={navigation} item={item}/>
          
      }
      

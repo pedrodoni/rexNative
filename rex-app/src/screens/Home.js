@@ -7,13 +7,13 @@ import Search from '../components/Search'
 
 
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View style={styles.container}>
-      
+      <Header navigation={navigation}/>
 
       
-      <CategoriesList/>
+      <CategoriesList navigation={navigation}/>
     </View>
   )
 }
