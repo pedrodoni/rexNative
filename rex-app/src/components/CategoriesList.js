@@ -1,6 +1,5 @@
 import { View, Text, FlatList, StyleSheet } from 'react-native'
 import React from 'react'
-import { categories } from '../data/categories'
 import { colors } from '../global/colors'
 import CategoryItem from './CategoryItem'
 import { useNavigation } from '@react-navigation/native'
@@ -8,6 +7,12 @@ import { useNavigation } from '@react-navigation/native'
 
 
 const CategoriesList = ({navigation}) => {
+
+  const categories = 
+
+
+
+
   return (
     <View style={styles.container}>
      <FlatList

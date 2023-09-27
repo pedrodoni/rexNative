@@ -5,6 +5,9 @@ import Header from './src/components/Header';
 import { useFonts } from 'expo-font';
 import { NavigationContainer } from '@react-navigation/native';
 import RootNavigation from './src/RootNavigation/RootNavigation';
+import TabNav from './src/RootNavigation/TabNav';
+import { Provider } from 'react-redux';
+import { store } from './src/redux/store';
 
 
 export default function App({navigation}) {
@@ -18,13 +21,14 @@ if(!fontsLoaded){
 }
       
   return (
+    <Provider store={store}>
     <NavigationContainer>
-        
-        <RootNavigation/>
+      
+        <TabNav/>
     
 
     </NavigationContainer>
-    
+    </Provider>
   );
 }
 

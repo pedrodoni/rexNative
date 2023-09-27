@@ -15,7 +15,7 @@ const Header = ({navigation}) => {
       </Pressable>
       <Image 
       style={styles.logo}
-      source={{uri:'https://scontent.fcor4-1.fna.fbcdn.net/v/t39.30808-6/321803510_1225218278072928_4103975119971623412_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=5t55mOxPZp8AX_fR3OG&_nc_ht=scontent.fcor4-1.fna&oh=00_AfDqzx77QUI29FyJIPEXExSCr5DyMWHbnO6RoBj4-po5-g&oe=650FC5D4'}}
+      source={{uri:'https://scontent.fcor4-1.fna.fbcdn.net/v/t39.30808-6/321803510_1225218278072928_4103975119971623412_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=7WbCfqe2QeAAX9bku40&_nc_ht=scontent.fcor4-1.fna&oh=00_AfDVPUHixSSf2gAXU-X53vGmn04w4-5ZQ0rzCJoFoSIbaA&oe=6519A914'}}
       
       />
     

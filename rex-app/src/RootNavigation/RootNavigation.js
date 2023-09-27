@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from '../screens/Home'
 import Products from '../screens/Products'
 import ProductDetail from '../screens/ProductDetail'
+import FinishCart from '../components/FinishCart'
 
 const Stack = createNativeStackNavigator()
 
@@ -13,6 +14,7 @@ const RootNavigation = () => {
         <Stack.Screen  component={Home} name='Inicio'/>
         <Stack.Screen  component={Products} name='Products'/>
         <Stack.Screen component={ProductDetail}name='Detalle'/>
+     
           
     </Stack.Navigator>
   )
